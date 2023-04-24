@@ -1,3 +1,10 @@
+ssh russer@89.248.207.207
+cd /home/russer/ my_birthday_bot
+
+sudo nano my_birthday_bot.service
+
+
+
 [Unit]
 Description=my_birthday_bot
 After=syslog.target
