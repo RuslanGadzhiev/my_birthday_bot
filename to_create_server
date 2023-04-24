@@ -1,0 +1,14 @@
+[Unit]
+Description=my_birthday_bot
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=russer
+WorkingDirectory=/home/russer/my_birthday_bot
+ExecStart=/home/russer/my_birthday_bot/venv/bin/python3 /home/russer/my_birthday_bot/bot.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
